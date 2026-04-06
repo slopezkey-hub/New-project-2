@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-heading:
+    "Bodoni 72", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+  --font-body:
+    "Avenir Next", "Manrope", "Segoe UI", "Helvetica Neue", "Arial Nova", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(106, 13, 173, 0.32), transparent 30%),
+    linear-gradient(180deg, #11071b 0%, #0a0a0a 38%, #070707 100%);
+  color: #f6f1ff;
+}
+
+body::selection {
+  background: rgba(212, 175, 55, 0.28);
+}
+
+.luxury-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.glass-card {
+  background: linear-gradient(180deg, rgba(18, 16, 24, 0.92), rgba(10, 10, 10, 0.94));
+  border: 1px solid rgba(106, 13, 173, 0.34);
+  box-shadow: 0 0 30px rgba(106, 13, 173, 0.1);
+}

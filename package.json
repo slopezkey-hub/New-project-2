@@ -1,0 +1,46 @@
+{
+  "name": "icon-bets",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "db:generate": "prisma generate",
+    "db:push": "prisma generate && prisma db execute --file prisma/init.sql --schema prisma/schema.prisma",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "bot": "tsx discord/bot.ts"
+  },
+  "dependencies": {
+    "@next-auth/prisma-adapter": "latest",
+    "@prisma/client": "^6.0.0",
+    "clsx": "latest",
+    "discord.js": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "next-auth": "beta",
+    "nodemailer": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "stripe": "latest",
+    "tailwind-merge": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/nodemailer": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@tailwindcss/postcss": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "prisma": "^6.0.0",
+    "tailwindcss": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}
